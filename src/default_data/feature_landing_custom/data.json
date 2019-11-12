@@ -1,0 +1,958 @@
+{
+    "bg": {
+        "uniqueId": 13689655108,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-color",
+            "data": {}
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            },
+            "md": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {},
+        "new": true
+    },
+    "contentBackground": {
+        "uniqueId": 13560930258,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-color",
+            "data": {}
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            },
+            "md": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {},
+        "new": true
+    },
+    "featureBackground": {
+        "uniqueId": 11983190552,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-color",
+            "data": {}
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            },
+            "md": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {},
+        "new": true
+    },
+    "contentFeature": {
+        "uniqueId": 11784773026,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-image",
+            "data": {
+                "url": "https://cdn.weweb.app/public/images/no_preview.jpg"
+            }
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            },
+            "md": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {},
+        "new": true
+    },
+    "titles": [
+        {
+            "uniqueId": 15041653620,
+            "wwVersion": 3,
+            "content": {
+                "type": "ww-text",
+                "data": {
+                    "text": {
+                        "fr": "Nouveau texte",
+                        "en": "<p style=\"text-align: center;\"><strong style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\" class=\"ww-font-size-huge\">You need something of your own ?</strong></p>"
+                    },
+                    "tag": "div",
+                    "align": "",
+                    "font": "",
+                    "size": "",
+                    "color": "",
+                    "classes": [],
+                    "children": [],
+                    "fontStyle": ""
+                }
+            },
+            "link": {
+                "type": "none",
+                "data": {}
+            },
+            "ratio": -1,
+            "paddings": {
+                "xs": {
+                    "top": 0,
+                    "left": 0,
+                    "right": 0,
+                    "bottom": 0
+                },
+                "md": {
+                    "top": 25,
+                    "left": 0,
+                    "right": 0,
+                    "bottom": 25
+                }
+            },
+            "hidden": false,
+            "tags": [],
+            "children": {},
+            "data": {},
+            "anim": {}
+        },
+        {
+            "uniqueId": 6830654480,
+            "wwVersion": 3,
+            "content": {
+                "type": "ww-text",
+                "data": {
+                    "text": {
+                        "fr": "Nouveau texte",
+                        "en": "<p style=\"line-height: 30px; text-align: center;\"><span class=\"ww-font-size-big\" style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\">We believe that no-code solutions are always limiting and frustrating. We </span></p><p style=\"line-height: 30px; text-align: center;\"><span class=\"ww-font-size-big\" style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\">obsessively seek out elegant and open solutions for developers to add</span></p><p style=\"line-height: 30px; text-align: center;\"><span class=\"ww-font-size-big\" style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\"> anything they want quickly. No need to learn a new language, just add a</span></p><p style=\"line-height: 30px; text-align: center;\"><span class=\"ww-font-size-big\" style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\">Vue.js single file component (SFC).</span></p>"
+                    },
+                    "tag": "div",
+                    "align": "",
+                    "font": "",
+                    "size": "",
+                    "color": "",
+                    "classes": [],
+                    "children": [],
+                    "fontStyle": ""
+                }
+            },
+            "link": {
+                "type": "none",
+                "data": {}
+            },
+            "ratio": -1,
+            "paddings": {
+                "xs": {
+                    "top": 0,
+                    "left": 0,
+                    "right": 0,
+                    "bottom": 0
+                },
+                "md": {
+                    "top": 0,
+                    "left": 0,
+                    "right": 0,
+                    "bottom": 60
+                }
+            },
+            "hidden": false,
+            "tags": [],
+            "children": {},
+            "data": {},
+            "anim": {}
+        }
+    ],
+    "rootFeatures": [
+        {
+            "title": {
+                "uniqueId": 8409519355,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-row",
+                    "data": {
+                        "wwObjects": [
+                            {
+                                "uniqueId": 3982840793,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-icon",
+                                    "data": {
+                                        "icon": "fas fa-code",
+                                        "style": {
+                                            "color": "#2E85C2",
+                                            "backgroundColor": "#FFFFFF00",
+                                            "gradient": {},
+                                            "borderRadius": 50,
+                                            "borderWidth": 0,
+                                            "borderColor": "#000000",
+                                            "borderStyle": "none",
+                                            "boxShadow": {
+                                                "x": 0,
+                                                "y": 0,
+                                                "b": 0,
+                                                "s": 0,
+                                                "c": ""
+                                            },
+                                            "size": 40,
+                                            "fontSize": 20
+                                        }
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 10,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            },
+                            {
+                                "uniqueId": 7854951319,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-text",
+                                    "data": {
+                                        "text": {
+                                            "fr": "Nouveau texte",
+                                            "en": "<p><strong style=\"font-family: montserrat, sans-serif; color: rgb(46, 133, 194);\">SFC with WeWeb objects</strong></p>"
+                                        },
+                                        "tag": "div",
+                                        "align": "",
+                                        "font": "",
+                                        "size": "",
+                                        "color": "",
+                                        "classes": [],
+                                        "children": [],
+                                        "fontStyle": ""
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            }
+                        ],
+                        "align": "center",
+                        "justify": "center"
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 10,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "content": {
+                "uniqueId": 4630635995,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-image",
+                    "data": {
+                        "url": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "twicUrl": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "alt": "",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "pos": {},
+                        "zoom": 1,
+                        "style": {
+                            "borderRadius": 0,
+                            "borderWidth": 0,
+                            "borderColor": null,
+                            "borderStyle": null,
+                            "overlay": null,
+                            "filter": null,
+                            "boxShadow": {
+                                "x": 0,
+                                "y": 0,
+                                "b": 0,
+                                "s": 0,
+                                "c": ""
+                            }
+                        },
+                        "animation": {
+                            "duration": 0,
+                            "delay": 0,
+                            "fn": null,
+                            "opacity": 1,
+                            "scale": 1,
+                            "translateX": 0,
+                            "translateY": 0,
+                            "rotate": 0
+                        },
+                        "imgSize": {
+                            "w": 1920,
+                            "h": 1080
+                        },
+                        "hover": {
+                            "name": "",
+                            "options": {}
+                        },
+                        "focusPoint": [
+                            50,
+                            50
+                        ]
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "uniqueId": 8979116182
+        },
+        {
+            "title": {
+                "uniqueId": 3489904572,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-row",
+                    "data": {
+                        "wwObjects": [
+                            {
+                                "uniqueId": 1000200416,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-icon",
+                                    "data": {
+                                        "icon": "fas fa-upload",
+                                        "style": {
+                                            "color": "#2E85C2",
+                                            "backgroundColor": "#FFFFFF00",
+                                            "gradient": {},
+                                            "borderRadius": 50,
+                                            "borderWidth": 0,
+                                            "borderColor": "#000000",
+                                            "borderStyle": "none",
+                                            "boxShadow": {
+                                                "x": 0,
+                                                "y": 0,
+                                                "b": 0,
+                                                "s": 0,
+                                                "c": ""
+                                            },
+                                            "size": 40,
+                                            "fontSize": 20
+                                        }
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 10,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            },
+                            {
+                                "uniqueId": 14897751008,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-text",
+                                    "data": {
+                                        "text": {
+                                            "fr": "Nouveau texte",
+                                            "en": "<p><strong style=\"color: rgb(46, 133, 194); font-family: montserrat, sans-serif;\">Upload in one command</strong></p>"
+                                        },
+                                        "tag": "div",
+                                        "align": "",
+                                        "font": "",
+                                        "size": "",
+                                        "color": "",
+                                        "classes": [],
+                                        "children": [],
+                                        "fontStyle": ""
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            }
+                        ],
+                        "align": "center",
+                        "justify": "center"
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "content": {
+                "uniqueId": 2553586106,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-image",
+                    "data": {
+                        "url": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "twicUrl": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "alt": "",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "pos": {},
+                        "zoom": 1,
+                        "style": {
+                            "borderRadius": 0,
+                            "borderWidth": 0,
+                            "borderColor": null,
+                            "borderStyle": null,
+                            "overlay": null,
+                            "filter": null,
+                            "boxShadow": {
+                                "x": 0,
+                                "y": 0,
+                                "b": 0,
+                                "s": 0,
+                                "c": ""
+                            }
+                        },
+                        "animation": {
+                            "duration": 0,
+                            "delay": 0,
+                            "fn": null,
+                            "opacity": 1,
+                            "scale": 1,
+                            "translateX": 0,
+                            "translateY": 0,
+                            "rotate": 0
+                        },
+                        "imgSize": {
+                            "w": 1920,
+                            "h": 1080
+                        },
+                        "hover": {
+                            "name": "",
+                            "options": {}
+                        },
+                        "focusPoint": [
+                            50,
+                            50
+                        ]
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "uniqueId": 11434258010
+        },
+        {
+            "title": {
+                "uniqueId": 7930677383,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-row",
+                    "data": {
+                        "wwObjects": [
+                            {
+                                "uniqueId": 1057147231,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-icon",
+                                    "data": {
+                                        "icon": "fas fa-book-open",
+                                        "style": {
+                                            "color": "#2E85C2",
+                                            "backgroundColor": "#FFFFFF00",
+                                            "gradient": {},
+                                            "borderRadius": 50,
+                                            "borderWidth": 0,
+                                            "borderColor": "#000000",
+                                            "borderStyle": "none",
+                                            "boxShadow": {
+                                                "x": 0,
+                                                "y": 0,
+                                                "b": 0,
+                                                "s": 0,
+                                                "c": ""
+                                            },
+                                            "size": 40,
+                                            "fontSize": 20
+                                        }
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 10,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            },
+                            {
+                                "uniqueId": 12659885468,
+                                "wwVersion": 3,
+                                "content": {
+                                    "type": "ww-text",
+                                    "data": {
+                                        "text": {
+                                            "fr": "Nouveau texte",
+                                            "en": "<p><strong style=\"font-family: montserrat, sans-serif; color: rgb(46, 133, 194);\">New asset in your library</strong></p>"
+                                        },
+                                        "tag": "div",
+                                        "align": "",
+                                        "font": "",
+                                        "size": "",
+                                        "color": "",
+                                        "classes": [],
+                                        "children": [],
+                                        "fontStyle": ""
+                                    }
+                                },
+                                "link": {
+                                    "type": "none",
+                                    "data": {}
+                                },
+                                "ratio": -1,
+                                "paddings": {
+                                    "xs": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    },
+                                    "md": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "right": 0,
+                                        "bottom": 0
+                                    }
+                                },
+                                "hidden": false,
+                                "tags": [],
+                                "children": {},
+                                "data": {},
+                                "anim": {}
+                            }
+                        ],
+                        "align": "center",
+                        "justify": "center"
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "content": {
+                "uniqueId": 6026297096,
+                "wwVersion": 3,
+                "content": {
+                    "type": "ww-image",
+                    "data": {
+                        "url": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "twicUrl": "https://cdn.weweb.app/public/images/no_image_selected.png",
+                        "alt": "",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "pos": {},
+                        "zoom": 1,
+                        "style": {
+                            "borderRadius": 0,
+                            "borderWidth": 0,
+                            "borderColor": null,
+                            "borderStyle": null,
+                            "overlay": null,
+                            "filter": null,
+                            "boxShadow": {
+                                "x": 0,
+                                "y": 0,
+                                "b": 0,
+                                "s": 0,
+                                "c": ""
+                            }
+                        },
+                        "animation": {
+                            "duration": 0,
+                            "delay": 0,
+                            "fn": null,
+                            "opacity": 1,
+                            "scale": 1,
+                            "translateX": 0,
+                            "translateY": 0,
+                            "rotate": 0
+                        },
+                        "imgSize": {
+                            "w": 1920,
+                            "h": 1080
+                        },
+                        "hover": {
+                            "name": "",
+                            "options": {}
+                        },
+                        "focusPoint": [
+                            50,
+                            50
+                        ]
+                    }
+                },
+                "link": {
+                    "type": "none",
+                    "data": {}
+                },
+                "ratio": -1,
+                "paddings": {
+                    "xs": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    },
+                    "md": {
+                        "top": 0,
+                        "left": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                "hidden": false,
+                "tags": [],
+                "children": {},
+                "data": {},
+                "anim": {}
+            },
+            "uniqueId": 4516272014
+        }
+    ],
+    "dropDownIcon": {
+        "uniqueId": 10867191893,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-icon",
+            "data": {}
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            },
+            "md": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {},
+        "new": true
+    },
+    "seeDoc": {
+        "uniqueId": 7235536283,
+        "wwVersion": 3,
+        "content": {
+            "type": "ww-text",
+            "data": {
+                "text": {
+                    "fr": "Nouveau texte",
+                    "en": "<p><span style=\"font-weight: 600; color: rgb(46, 133, 194); font-family: montserrat, sans-serif;\">See Full </span><strong style=\"color: rgb(46, 133, 194); font-family: montserrat, sans-serif;\">documentation</strong></p>"
+                },
+                "tag": "div",
+                "align": "",
+                "font": "",
+                "size": "",
+                "color": "",
+                "classes": [],
+                "children": [],
+                "fontStyle": ""
+            }
+        },
+        "link": {
+            "type": "none",
+            "data": {}
+        },
+        "ratio": -1,
+        "paddings": {
+            "xs": {
+                "top": 15,
+                "left": 0,
+                "right": 0,
+                "bottom": 15
+            },
+            "md": {
+                "top": 25,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+            }
+        },
+        "hidden": false,
+        "tags": [],
+        "children": {},
+        "data": {},
+        "anim": {}
+    },
+    "bottomWwObjs": [],
+    "shadowConfig": "0 1px 23px -5px rgba(0, 0, 0, 0.2)"
+}
