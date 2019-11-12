@@ -15,15 +15,19 @@
         </wwLayoutColumn>
         <div class="feature-landing">
             <div class="content-wrapper">
-                <div class="feature-content">
+                <!-- <div class="feature-content">
                     <wwObject :ww-object="activeFeature.content"></wwObject>
+                </div>-->
+                <div class="feature-content">
+                    <div v-for="feature in section.data.rootFeatures" :key="feature.uniqueId">
+                        <transition name="fade">
+                            <div v-if="feature.uniqueId === activeFeature.uniqueId ">
+                                <wwObject :ww-object="feature.content"></wwObject>
+                            </div>
+                        </transition>
+                    </div>
                 </div>
 
-                <!-- <transition name="fade" mode="in-out">
-                    <div class="feature-content">
-                        <wwObject :ww-object="activeFeature.content"></wwObject>
-                    </div>
-                </transition>-->
                 <div class="feature-title-wrapper">
                     <div class="feature-title">
                         <div class="title-wrapper" v-for="(feature, index) in section.data.rootFeatures" :key="feature.uniqueId">
@@ -65,7 +69,7 @@ export default {
     data() {
         return {
             activeFeature: [],
-            animate: false,
+            animate: true,
             selectedFeatureIndex: 0,
             currentIndex: 0,
             elemOptions: {
@@ -352,7 +356,9 @@ export default {
         /* update current selected element */
 
         selectActiveFeature(feature) {
+            this.animate = false
             this.activeFeature = feature
+            this.animate = true
         },
     }
 };
@@ -394,6 +400,7 @@ $ww-blue-strong: #1763a9;
                     display: flex;
                     .title {
                         width: 100%;
+                        cursor: pointer;
                         &.selected {
                             box-shadow: var(--shadowConfig);
                         }
@@ -411,12 +418,27 @@ $ww-blue-strong: #1763a9;
     }
 }
 // Vuejs transition
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s;
+// .fade-enter-active {
+//     transition: opacity 5s ease 0.5s;
+// }
+
+// .fade-leave-active {
+//     transition: opacity 10s;
+// }
+
+.fade-enter-active {
+    transition: 1s opacity 5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+}
+.fade-leave-active {
+    transition: 1s opacity 7s;
+}
+.fade-enter,
+.fade-leave-to {
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .background {
