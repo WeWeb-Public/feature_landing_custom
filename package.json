@@ -1,11 +1,11 @@
 {
-    "name": "feature_landing_custom",
+    "name": "feature_weweb_landing",
     "type": "section",
     "version": "0.0.1",
     "wewebPublic": true,
     "repository": {
         "type": "git",
-        "url": "https://github.com/WeWeb-Public/feature_landing_custom"
+        "url": "https://github.com/WeWeb-Public/feature_weweb_landing"
     },
     "private": true,
     "scripts": {

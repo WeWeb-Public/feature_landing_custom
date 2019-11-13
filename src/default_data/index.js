@@ -1,6 +1,6 @@
 module.exports = [
     {
-        name: 'feature_landing_custom',
+        name: 'feature_weweb_landing',
         category: 'features',
         storeName: {
             en: "Section features",
