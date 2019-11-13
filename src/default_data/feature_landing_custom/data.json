@@ -1,6 +1,6 @@
 {
     "bg": {
-        "uniqueId": 2963341548,
+        "uniqueId": 11043520711,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
@@ -48,7 +48,7 @@
         "anim": {}
     },
     "contentBackground": {
-        "uniqueId": 8025345534,
+        "uniqueId": 11357885956,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
@@ -81,7 +81,7 @@
         "new": true
     },
     "featureBackground": {
-        "uniqueId": 14599306529,
+        "uniqueId": 2430243039,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
@@ -114,7 +114,7 @@
         "new": true
     },
     "contentFeature": {
-        "uniqueId": 2186452180,
+        "uniqueId": 8075892507,
         "wwVersion": 3,
         "content": {
             "type": "ww-image",
@@ -150,7 +150,7 @@
     },
     "titles": [
         {
-            "uniqueId": 8596697408,
+            "uniqueId": 11008319053,
             "wwVersion": 3,
             "content": {
                 "type": "ww-text",
@@ -195,7 +195,7 @@
             "anim": {}
         },
         {
-            "uniqueId": 659775819,
+            "uniqueId": 147950810,
             "wwVersion": 3,
             "content": {
                 "type": "ww-text",
@@ -243,14 +243,14 @@
     "rootFeatures": [
         {
             "title": {
-                "uniqueId": 12316113765,
+                "uniqueId": 6237474912,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 9719518444,
+                                "uniqueId": 8311960377,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -302,7 +302,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 12269527781,
+                                "uniqueId": 4966735912,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -377,12 +377,12 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 9167368076,
+                "uniqueId": 2050674752,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
                     "data": {
-                        "url": "https://cdn.weweb.app/designs/7/sections/DO93bFIEdkDc4jnvjqVqFshXu884qWcG.jpg",
+                        "url": "https://cdn.weweb.app/designs/7/sections/Screenshot_from_2019-11-13_12-33-18.png?v=1573644840995",
                         "twicUrl": "https://cdn.weweb.app/public/images/no_image_selected.png",
                         "alt": "",
                         "position": {
@@ -390,7 +390,7 @@
                             "y": 0
                         },
                         "pos": {},
-                        "zoom": 1.1851598693703957,
+                        "zoom": 1,
                         "style": {
                             "borderRadius": 0,
                             "borderWidth": 0,
@@ -434,7 +434,7 @@
                     "type": "none",
                     "data": {}
                 },
-                "ratio": -1,
+                "ratio": 56.25,
                 "paddings": {
                     "xs": {
                         "top": 0,
@@ -459,14 +459,14 @@
         },
         {
             "title": {
-                "uniqueId": 2854016541,
+                "uniqueId": 1272469703,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 3709319371,
+                                "uniqueId": 81902295,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -518,7 +518,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 2880287314,
+                                "uniqueId": 2723311536,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -593,7 +593,7 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 11056920670,
+                "uniqueId": 3570527733,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
@@ -675,14 +675,14 @@
         },
         {
             "title": {
-                "uniqueId": 8034300106,
+                "uniqueId": 2365152562,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 8550017086,
+                                "uniqueId": 8868410781,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -734,7 +734,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 12938595309,
+                                "uniqueId": 2662892918,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -809,7 +809,7 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 6423772258,
+                "uniqueId": 3628408621,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
@@ -891,7 +891,7 @@
         }
     ],
     "dropDownIcon": {
-        "uniqueId": 10715630681,
+        "uniqueId": 9307182576,
         "wwVersion": 3,
         "content": {
             "type": "ww-icon",
@@ -924,7 +924,7 @@
         "new": true
     },
     "seeDoc": {
-        "uniqueId": 13173027325,
+        "uniqueId": 4133652718,
         "wwVersion": 3,
         "content": {
             "type": "ww-text",

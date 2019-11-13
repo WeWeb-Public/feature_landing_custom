@@ -89,6 +89,7 @@ export default {
         return {
             activeFeature: {},
             animate: true,
+            shadowValue: {},
             selectedFeatureIndex: 0,
             currentIndex: 0,
             elemOptions: {
@@ -137,6 +138,7 @@ export default {
         customStyle() {
             return {
                 '--shadowConfig': this.section.data.shadowConfig,
+                '--borderColor': this.section.data.borderColor,
             }
         }
 
@@ -150,6 +152,9 @@ export default {
         this.section.data = this.section.data || {};
         this.section.data.shadowConfig =
             this.section.data.shadowConfig || '0 1px 23px -5px rgba(0, 0, 0, 0.2)';
+
+        this.section.data.borderColor =
+            this.section.data.borderColor || '#fafafa';
 
         if (!this.section.data.bg) {
             this.section.data.bg = wwLib.wwObject.getDefault({
@@ -255,12 +260,25 @@ export default {
                                     en: 'card shadow config:',
                                     fr: 'Configuration de l\'ombre de la carte :'
                                 },
-                                type: 'text', //shadow dosen't work
+                                type: 'shadow', //shadow dosen't work
                                 key: 'shadowConfig',
-                                valueData: 'section.data.shadowConfig',
+                                valueData: 'data.shadowValue',
                                 desc: {
-                                    en: 'Box-shadow of the banner: offset-x | offset-y | blur-radius | spread-radius | color',
-                                    fr: 'L\'ombre de la bannière : offset-x | offset-y | blur-radius | spread-radius | color'
+                                    en: 'Box-shadow of the banner',
+                                    fr: 'L\'ombre de la bannière'
+                                }
+                            },
+                            {
+                                label: {
+                                    en: 'Border color config:',
+                                    fr: 'Configuration de la couleur de la bordure :'
+                                },
+                                type: 'color', //shadow dosen't work
+                                key: 'borderColor',
+                                valueData: 'data.borderColor',
+                                desc: {
+                                    en: 'Border color',
+                                    fr: 'Couleur de la bordure'
                                 }
                             },
                         ]
@@ -278,17 +296,24 @@ export default {
                 let options = {
                     firstPage: 'WWFEATURE_CUSTOM',
                     data: {
-                        section: this.section,
+                        data: this.data,
                     },
                 }
 
                 const result = await wwLib.wwPopups.open(options)
+
                 let needUpdate = false
                 if (typeof (result) != 'undefined') {
 
                     if (typeof (result.shadowConfig) != 'undefined') {
-                        console.log('result.shadowConfig:', result.shadowConfig)
-                        this.section.data.shadowConfig = result.shadowConfig;
+                        this.shadowValue = result.shadowConfig
+                        const _shadow = `${this.shadowValue.x}px ${this.shadowValue.y}px ${this.shadowValue.b}px ${this.shadowValue.s}px ${this.shadowValue.c}`;
+                        this.section.data.shadowConfig = _shadow
+                        needUpdate = true;
+
+                    } if (typeof (result.borderColor) != 'undefined') {
+
+                        this.section.data.borderColor = result.borderColor
                         needUpdate = true;
                     }
 
@@ -410,9 +435,11 @@ $ww-blue-strong: #1763a9;
             @media (max-width: 768px) {
                 padding: 10px;
             }
+
             height: max-content;
             .feature-title {
-                border-bottom: grey 1px solid;
+                border-bottom: 1px solid;
+                border-bottom-color: var(--borderColor);
                 width: fit-content;
                 .title-wrapper {
                     display: flex;
@@ -451,7 +478,8 @@ $ww-blue-strong: #1763a9;
             }
         }
         .see-doc {
-            border-top: grey 1px solid;
+            border-top: 1px solid;
+            border-top-color: var(--borderColor);
         }
     }
 }
