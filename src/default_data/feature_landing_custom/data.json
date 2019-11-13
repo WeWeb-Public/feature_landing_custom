@@ -1,10 +1,26 @@
 {
     "bg": {
-        "uniqueId": 5525795380,
+        "uniqueId": 2963341548,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
-            "data": {}
+            "data": {
+                "backgroundColor": "transparent",
+                "style": {
+                    "borderRadius": 0,
+                    "borderWidth": 0,
+                    "borderColor": null,
+                    "borderStyle": null,
+                    "boxShadow": {
+                        "x": 0,
+                        "y": 0,
+                        "b": 0,
+                        "s": 0,
+                        "c": ""
+                    }
+                },
+                "wwObjects": []
+            }
         },
         "link": {
             "type": "none",
@@ -29,11 +45,10 @@
         "tags": [],
         "children": {},
         "data": {},
-        "anim": {},
-        "new": true
+        "anim": {}
     },
     "contentBackground": {
-        "uniqueId": 10593031212,
+        "uniqueId": 8025345534,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
@@ -66,7 +81,7 @@
         "new": true
     },
     "featureBackground": {
-        "uniqueId": 8602116568,
+        "uniqueId": 14599306529,
         "wwVersion": 3,
         "content": {
             "type": "ww-color",
@@ -99,7 +114,7 @@
         "new": true
     },
     "contentFeature": {
-        "uniqueId": 3749144041,
+        "uniqueId": 2186452180,
         "wwVersion": 3,
         "content": {
             "type": "ww-image",
@@ -135,14 +150,14 @@
     },
     "titles": [
         {
-            "uniqueId": 8772471869,
+            "uniqueId": 8596697408,
             "wwVersion": 3,
             "content": {
                 "type": "ww-text",
                 "data": {
                     "text": {
                         "fr": "Nouveau texte",
-                        "en": "<p style=\"text-align: center;\"><strong style=\"color: rgb(102, 102, 102); font-family: montserrat, sans-serif;\" class=\"ww-font-size-huge\">You need something of your own ?</strong></p>"
+                        "en": "<p style=\"text-align: center;\"><strong class=\"ww-font-size-huge\" style=\"font-family: montserrat, sans-serif; color: rgb(102, 102, 102);\">You need something of your own ?</strong></p>"
                     },
                     "tag": "div",
                     "align": "",
@@ -180,7 +195,7 @@
             "anim": {}
         },
         {
-            "uniqueId": 1792711591,
+            "uniqueId": 659775819,
             "wwVersion": 3,
             "content": {
                 "type": "ww-text",
@@ -206,10 +221,10 @@
             "ratio": -1,
             "paddings": {
                 "xs": {
-                    "top": 0,
+                    "top": 15,
                     "left": 0,
                     "right": 0,
-                    "bottom": 0
+                    "bottom": 15
                 },
                 "md": {
                     "top": 0,
@@ -228,14 +243,14 @@
     "rootFeatures": [
         {
             "title": {
-                "uniqueId": 10088555565,
+                "uniqueId": 12316113765,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 11378319288,
+                                "uniqueId": 9719518444,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -287,7 +302,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 5595870788,
+                                "uniqueId": 12269527781,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -333,7 +348,7 @@
                             }
                         ],
                         "align": "center",
-                        "justify": "center"
+                        "justify": "flex-start"
                     }
                 },
                 "link": {
@@ -362,7 +377,7 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 13309582354,
+                "uniqueId": 9167368076,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
@@ -375,7 +390,7 @@
                             "y": 0
                         },
                         "pos": {},
-                        "zoom": 1,
+                        "zoom": 1.1851598693703957,
                         "style": {
                             "borderRadius": 0,
                             "borderWidth": 0,
@@ -425,7 +440,7 @@
                         "top": 0,
                         "left": 0,
                         "right": 0,
-                        "bottom": 0
+                        "bottom": 15
                     },
                     "md": {
                         "top": 0,
@@ -444,14 +459,14 @@
         },
         {
             "title": {
-                "uniqueId": 14819816948,
+                "uniqueId": 2854016541,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 11780273641,
+                                "uniqueId": 3709319371,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -503,7 +518,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 964233925,
+                                "uniqueId": 2880287314,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -549,7 +564,7 @@
                             }
                         ],
                         "align": "center",
-                        "justify": "center"
+                        "justify": "flex-start"
                     }
                 },
                 "link": {
@@ -578,7 +593,7 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 10906374997,
+                "uniqueId": 11056920670,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
@@ -591,7 +606,7 @@
                             "y": 0
                         },
                         "pos": {},
-                        "zoom": 1,
+                        "zoom": 1.0675194965111505,
                         "style": {
                             "borderRadius": 0,
                             "borderWidth": 0,
@@ -641,7 +656,7 @@
                         "top": 0,
                         "left": 0,
                         "right": 0,
-                        "bottom": 0
+                        "bottom": 15
                     },
                     "md": {
                         "top": 0,
@@ -660,14 +675,14 @@
         },
         {
             "title": {
-                "uniqueId": 9695042908,
+                "uniqueId": 8034300106,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-row",
                     "data": {
                         "wwObjects": [
                             {
-                                "uniqueId": 2996437904,
+                                "uniqueId": 8550017086,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-icon",
@@ -719,7 +734,7 @@
                                 "anim": {}
                             },
                             {
-                                "uniqueId": 13626039711,
+                                "uniqueId": 12938595309,
                                 "wwVersion": 3,
                                 "content": {
                                     "type": "ww-text",
@@ -765,7 +780,7 @@
                             }
                         ],
                         "align": "center",
-                        "justify": "center"
+                        "justify": "flex-start"
                     }
                 },
                 "link": {
@@ -794,7 +809,7 @@
                 "anim": {}
             },
             "content": {
-                "uniqueId": 13666264197,
+                "uniqueId": 6423772258,
                 "wwVersion": 3,
                 "content": {
                     "type": "ww-image",
@@ -807,7 +822,7 @@
                             "y": 0
                         },
                         "pos": {},
-                        "zoom": 1,
+                        "zoom": 1.0002563938209088,
                         "style": {
                             "borderRadius": 0,
                             "borderWidth": 0,
@@ -857,7 +872,7 @@
                         "top": 0,
                         "left": 0,
                         "right": 0,
-                        "bottom": 0
+                        "bottom": 20
                     },
                     "md": {
                         "top": 0,
@@ -876,7 +891,7 @@
         }
     ],
     "dropDownIcon": {
-        "uniqueId": 10908462755,
+        "uniqueId": 10715630681,
         "wwVersion": 3,
         "content": {
             "type": "ww-icon",
@@ -909,14 +924,14 @@
         "new": true
     },
     "seeDoc": {
-        "uniqueId": 8246025227,
+        "uniqueId": 13173027325,
         "wwVersion": 3,
         "content": {
             "type": "ww-text",
             "data": {
                 "text": {
                     "fr": "Nouveau texte",
-                    "en": "<p><span style=\"font-weight: 600; color: rgb(46, 133, 194); font-family: montserrat, sans-serif;\">See Full </span><strong style=\"color: rgb(46, 133, 194); font-family: montserrat, sans-serif;\">documentation</strong></p>"
+                    "en": "<p><span style=\"font-family: montserrat, sans-serif; color: rgb(46, 133, 194); font-weight: 600;\">See Full </span><strong style=\"font-family: montserrat, sans-serif; color: rgb(46, 133, 194);\">documentation</strong></p>"
                 },
                 "tag": "div",
                 "align": "",

@@ -8,16 +8,13 @@
         <!-- wwManager:start -->
         <wwSectionEditMenu :sectionCtrl="sectionCtrl" :options="openOptions"></wwSectionEditMenu>
         <!-- wwManager:end -->
-        <!-- <wwObject class="background" :ww-object="section.data.bg" ww-category="background"></wwObject> -->
+        <wwObject class="background" :ww-object="section.data.bg" ww-category="background"></wwObject>
 
         <wwLayoutColumn tag="div" ww-default="ww-text" :ww-list="section.data.titles" class="content feature-title" @ww-add="add(section.data.titles, $event)" @ww-remove="remove(section.data.titles, $event)">
             <wwObject tag="div" v-for="title in section.data.titles" :key="title.uniqueId" :ww-object="title"></wwObject>
         </wwLayoutColumn>
         <div class="feature-landing">
             <div class="content-wrapper">
-                <!-- <div class="feature-content">
-                    <wwObject :ww-object="activeFeature.content"></wwObject>
-                </div>-->
                 <div class="feature-content">
                     <div v-for="feature in section.data.rootFeatures" :key="feature.uniqueId">
                         <transition name="fade">
@@ -46,6 +43,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mobile-content-wrapper">
+                <div class="mobile-content">
+                    <div class="feature-wrapper" v-for="(feature, index) in section.data.rootFeatures" :key="feature.uniqueId">
+                        <!-- wwManager:start -->
+                        <wwContextMenu v-if="editMode" class="ww-orange-button" tag="div" :options="elemOptions" @remove="removeFeature(index)" @addBefore="addFeature(index, 'before')" @addAfter="addFeature(index, 'after')">
+                            <wwOrangeButton></wwOrangeButton>
+                        </wwContextMenu>
+                        <!-- wwManager:end -->
+                        <div class="feature-title">
+                            <wwObject tag="div" :ww-object="feature.title"></wwObject>
+                        </div>
+
+                        <div class="feature-content">
+                            <wwObject tag="div" :ww-object="feature.content"></wwObject>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-doc">
+                    <wwObject tag="div" :ww-object="section.data.seeDoc"></wwObject>
+                </div>
+            </div>
         </div>
         <!--BOTTOM WWOBJS-->
         <div class="bottom-ww-objs">
@@ -68,7 +87,7 @@ export default {
     },
     data() {
         return {
-            activeFeature: [],
+            activeFeature: {},
             animate: true,
             selectedFeatureIndex: 0,
             currentIndex: 0,
@@ -133,10 +152,10 @@ export default {
             this.section.data.shadowConfig || '0 1px 23px -5px rgba(0, 0, 0, 0.2)';
 
         if (!this.section.data.bg) {
-            needUpdate = true
             this.section.data.bg = wwLib.wwObject.getDefault({
                 type: 'ww-color'
             });
+            needUpdate = true
         }
         if (!this.section.data.seeDoc) {
             this.section.data.seeDoc = wwLib.wwObject.getDefault({ type: 'ww-text' });
@@ -149,13 +168,13 @@ export default {
         }
         if (!this.section.data.rootFeatures) {
             this.section.data.rootFeatures = [this.getNewFeature()]
-            this.activeFeature = this.getFeature()
             needUpdate = true
         }
 
 
         if (_.isEmpty(this.activeFeature)) {
-            this.activeFeature = this.getFeature()
+            this.activeFeature = this.section.data.rootFeatures[0] || this.getFeature()
+
         }
         if (_.isEmpty(this.section.data.bottomWwObjs)) {
             this.section.data.bottomWwObjs = [];
@@ -375,17 +394,16 @@ $ww-blue-strong: #1763a9;
     justify-content: center;
     display: flex;
     margin-bottom: 30px;
+
     .content-wrapper {
         width: 80%;
-        display: flex;
+        display: none;
         font-family: "Montserrat", sans-serif;
-        @media (max-width: 768px) {
-            width: 90%;
-            flex-direction: column;
+        @media (min-width: 1025px) {
+            display: flex;
         }
-
         .feature-title-wrapper {
-            flex-basis: 30%;
+            flex-basis: 40%;
             display: flex;
             flex-direction: column;
             padding: 10px 10px 10px 30px;
@@ -398,6 +416,8 @@ $ww-blue-strong: #1763a9;
                 width: fit-content;
                 .title-wrapper {
                     display: flex;
+                    margin-bottom: 10px;
+                    padding-right: 5px;
                     .title {
                         width: 100%;
                         cursor: pointer;
@@ -406,32 +426,44 @@ $ww-blue-strong: #1763a9;
                         }
                     }
                 }
-                .title-wrapper:last-child {
-                    margin-bottom: 15px;
-                }
             }
         }
 
         .feature-content {
+            position: relative;
             flex-basis: 60%;
         }
     }
-}
-// Vuejs transition
-// .fade-enter-active {
-//     transition: opacity 5s ease 0.5s;
-// }
 
-// .fade-leave-active {
-//     transition: opacity 10s;
-// }
+    .mobile-content-wrapper {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        width: 95%;
+        @media (min-width: 1025px) {
+            display: none;
+        }
+        .mobile-content {
+            .feature-wrapper {
+                .feature-title {
+                }
+                .feature-content {
+                }
+            }
+        }
+        .see-doc {
+            border-top: grey 1px solid;
+        }
+    }
+}
 
 .fade-enter-active {
-    transition: 1s opacity 5s;
+    transition: opacity 0.4s ease-in;
+    // transition: opacity 1s ease 0.5s;
 }
-}
+
 .fade-leave-active {
-    transition: 1s opacity 7s;
+    transition: opacity 0.4s ease-out;
+    // transition: opacity 1s ease 0.5s;
 }
 .fade-enter,
 .fade-leave-to {
@@ -439,6 +471,8 @@ $ww-blue-strong: #1763a9;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .background {
@@ -484,11 +518,10 @@ $ww-blue-strong: #1763a9;
     z-index: 1;
 }
 
+.feature-wrapper,
 .feature-title {
     .ww-orange-button {
         position: absolute;
-        // top: 0;
-        // left: 0;
         transform: translate(-50%, -50%);
         z-index: 2;
     }
