@@ -88,7 +88,7 @@ export default {
     data() {
         return {
             activeFeature: {},
-            animate: true,
+
             shadowValue: {},
             selectedFeatureIndex: 0,
             currentIndex: 0,
@@ -132,9 +132,7 @@ export default {
         editMode() {
             return this.sectionCtrl.getEditMode() == 'CONTENT'
         },
-        animated() {
-            return this.animate
-        },
+
         customStyle() {
             return {
                 '--shadowConfig': this.section.data.shadowConfig,
@@ -150,11 +148,16 @@ export default {
 
         //Initialize section data
         this.section.data = this.section.data || {};
+
+
+        this.section.data.shadowValue = this.section.data.shadowValue || {
+            x: 0, y: 0, s: 0, b: 10, c: 'rgba(50, 50, 50, 0.75)'
+        }
         this.section.data.shadowConfig =
             this.section.data.shadowConfig || '0 1px 23px -5px rgba(0, 0, 0, 0.2)';
 
         this.section.data.borderColor =
-            this.section.data.borderColor || '#fafafa';
+            this.section.data.borderColor || '#2E85C2';
 
         if (!this.section.data.bg) {
             this.section.data.bg = wwLib.wwObject.getDefault({
@@ -260,9 +263,9 @@ export default {
                                     en: 'card shadow config:',
                                     fr: 'Configuration de l\'ombre de la carte :'
                                 },
-                                type: 'shadow', //shadow dosen't work
+                                type: 'shadow',
                                 key: 'shadowConfig',
-                                valueData: 'data.shadowValue',
+                                valueData: 'section.data.shadowValue',
                                 desc: {
                                     en: 'Box-shadow of the banner',
                                     fr: 'L\'ombre de la bannière'
@@ -273,9 +276,9 @@ export default {
                                     en: 'Border color config:',
                                     fr: 'Configuration de la couleur de la bordure :'
                                 },
-                                type: 'color', //shadow dosen't work
+                                type: 'color',
                                 key: 'borderColor',
-                                valueData: 'data.borderColor',
+                                valueData: 'section.data.borderColor',
                                 desc: {
                                     en: 'Border color',
                                     fr: 'Couleur de la bordure'
@@ -296,7 +299,7 @@ export default {
                 let options = {
                     firstPage: 'WWFEATURE_CUSTOM',
                     data: {
-                        data: this.data,
+                        section: this.section,
                     },
                 }
 
@@ -306,13 +309,13 @@ export default {
                 if (typeof (result) != 'undefined') {
 
                     if (typeof (result.shadowConfig) != 'undefined') {
-                        this.shadowValue = result.shadowConfig
+                        console.log('result.shadowConfig:', result.shadowConfig)
+                        this.section.data.shadowValue = result.shadowConfig
                         const _shadow = `${this.shadowValue.x}px ${this.shadowValue.y}px ${this.shadowValue.b}px ${this.shadowValue.s}px ${this.shadowValue.c}`;
                         this.section.data.shadowConfig = _shadow
                         needUpdate = true;
 
                     } if (typeof (result.borderColor) != 'undefined') {
-
                         this.section.data.borderColor = result.borderColor
                         needUpdate = true;
                     }
@@ -326,52 +329,6 @@ export default {
             } catch (error) {
                 wwLib.wwLog.error('ERROR : ', error);
             }
-        },
-        /* create a popup forum */
-        async edit() {
-            wwLib.wwPopups.addStory('WWDOT_CUSTOM', {
-                title: {
-                    en: 'Color picker',
-                    fr: 'Choisir une couleur'
-                },
-                type: 'wwPopupForm',
-                storyData: {
-                    fields: [
-                        {
-                            label: {
-                                en: 'Border Color:',
-                                fr: 'Couleur de la bordure :'
-                            },
-                            type: 'color',
-                            key: 'borderColor',
-                            value: "#42b983",
-                            valueData: 'borderColor',
-                            desc: {
-                                en: 'Choose a border color',
-                                fr: 'Changer la couleur de la bordure'
-                            }
-                        },
-                    ]
-                },
-                buttons: {
-
-                    NEXT: {
-                        text: {
-                            en: 'Ok',
-                            fr: 'Ok'
-                        },
-                        next: false
-                    }
-                }
-            })
-
-            let options = {
-                firstPage: 'WWDOT_CUSTOM',
-                data: {
-                    wwObject: this.wwObject,
-                }
-            }
-            return options
         },
 
         remove(list, options) {
@@ -400,9 +357,13 @@ export default {
         /* update current selected element */
 
         selectActiveFeature(feature) {
-            this.animate = false
-            this.activeFeature = feature
-            this.animate = true
+            try {
+                this.activeFeature = feature
+            } catch (error) {
+                console.error(error)
+            }
+
+
         },
     }
 };
@@ -469,14 +430,6 @@ $ww-blue-strong: #1763a9;
         @media (min-width: 1025px) {
             display: none;
         }
-        .mobile-content {
-            .feature-wrapper {
-                .feature-title {
-                }
-                .feature-content {
-                }
-            }
-        }
         .see-doc {
             border-top: 1px solid;
             border-top-color: var(--borderColor);
@@ -486,12 +439,10 @@ $ww-blue-strong: #1763a9;
 
 .fade-enter-active {
     transition: opacity 0.4s ease-in;
-    // transition: opacity 1s ease 0.5s;
 }
 
 .fade-leave-active {
     transition: opacity 0.4s ease-out;
-    // transition: opacity 1s ease 0.5s;
 }
 .fade-enter,
 .fade-leave-to {
@@ -527,24 +478,6 @@ $ww-blue-strong: #1763a9;
 }
 
 /* wwManager:start */
-
-.contextmenu {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
-    color: white;
-    background-color: #ef811a;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 1;
-}
 
 .feature-wrapper,
 .feature-title {
