@@ -1,7 +1,7 @@
 {
     "name": "feature_weweb_landing",
     "type": "section",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "wewebPublic": true,
     "repository": {
         "type": "git",
